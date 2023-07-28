@@ -1,0 +1,79 @@
+.aboutcard {
+  width: 220px;
+  height: auto;
+  border-radius: 16px;
+  color: #1b1b1b;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &:hover {
+    width: 227px;
+    background-color: rgba(255, 200, 20, 1);
+  }
+  .aboutcard_icon {
+    svg {
+      transition: all 0.2s;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+  }
+  .aboutcard_title {
+    height: 48px;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: pop-bold;
+    margin-bottom: 10px;
+  }
+  .aboutcard_desc {
+    font-family: pop-reg;
+    line-height: 20px;
+  }
+}
+.aboutcard.ru .aboutcard_title{
+  font-family: mon-bold;
+}
+.aboutcard.ru .aboutcard_desc{
+  font-size: 15px;
+  font-family: mon-reg;
+}
+@media (max-width: 1000px) {
+    .aboutcard{
+      width: 190px;
+      .aboutcard_title{
+        font-size: 16px;
+      }
+      .aboutcard_desc{
+        font-size: 15px;
+      }
+    }
+}
+@media (max-width: 851px) {
+  .aboutcard{
+    width: 170px;
+    padding: 15px;
+    .aboutcard_title{
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    .aboutcard_desc{
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .aboutcard{
+    width: 155px;
+    &:hover{
+      width: 160px;
+    }
+  }
+}
+@media (max-width: 520px) {
+  .aboutcard{
+    width: 325px;
+  }
+}

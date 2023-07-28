@@ -1,0 +1,69 @@
+$mainColor: #2D3134;
+$secondaryColor: #5B5F62;
+$primaryColor: #F66F4D;
+
+.mySwiper_react {
+	height: 100vh;
+	.top_swiper{
+		display: flex;
+		padding: 40px 0;
+		align-items: start;
+		justify-content: space-between;
+		.right_swiper{
+			display: flex;
+			gap: 30px;
+			button{
+				width: 40px;
+				height: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				border-radius: 50%;
+				outline: none;
+				border: 1px solid white;
+				background-color: $mainColor;
+				color: white;
+				font-weight: 600;
+				font-size: 22px;
+				transition: all .5s ease-in-out;
+				&:hover{
+					background-color: white;
+					border: 1px solid $mainColor;
+					color: $mainColor;
+				}
+			}
+		}
+	}
+}
+.swiper {
+  width: 100%;
+  height: 270px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	.swiper-button-prev{
+		position: absolute;
+		top: 0 !important;
+		right: 0 !important;
+		left: auto;
+		z-index: 100;
+		/* left: 100%; */
+	}
+	.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;	
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	 img {
+		width: 100%;
+		height: 100%;
+	}
+}
+}
+
+
+

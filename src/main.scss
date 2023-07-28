@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: pop-reg;
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: pop-med;
+  src: url(./assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: pop-bold;
+  src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: kiss-reg;
+  src: url(./assets/fonts/Quick-Kiss.ttf);
+}
+
+@font-face {
+  font-family: Volkhov;
+  src: url(./assets/fonts/Volkhov-Regular.ttf);
+}
+@font-face {
+  font-family: mon-bold;
+  src: url(./assets/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: mon-med;
+  src: url(./assets/fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: mon-reg;
+  src: url(./assets/fonts/Montserrat-Regular.ttf);
+}
+.error-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: Volkhov;
+  justify-content: center;
+  font-size: calc(35px + (56 - 35) * ((100vw - 320px) / (1600 - 320)));
+}
+
+
+
